@@ -5,18 +5,18 @@ import { Clock, BarChart } from "lucide-react";
 
 import cover_mujeres_de_impacto from "@/assets/covers/mujeres-de-impacto.jpg";
 import cover_ugc from "@/assets/covers/ugc.png";
-import cover_edb from "@/assets/covers/edb.jpg";
+import cover_mente from "@/assets/covers/mente-exitosa.png";
 
 
 const ProgramsSection = () => {
   const programs = [
     {
-      title: "El digital bridge",
-      description: "Programa completo de marketing, contenido y ventas digitales. Aprende a crear, vender y automatizar tus resultados.",
-      duration: "8 semanas",
+      title: "Mente exitosa",
+      description: "8 módulos y 3 libros de mentalidad exitosa que te volarán la cabeza",
+      duration: "6 semanas",
       level: "Principiante",
-      image: cover_edb,
-      link: "https://shop.beacons.ai/katherinee_ugc/8b96a046-edae-4c3d-a36e-db66d661570e",
+      image: cover_mente,
+      link: "https://shop.beacons.ai/katherinee_ugc/19274d3d-211d-4f0c-b36d-589171438dbd?pageViewSource=lib_view&referrer=https%3A%2F%2Fbeacons.ai%2Fkatherinee_ugc&show_back_button=true",
 
     },
     {

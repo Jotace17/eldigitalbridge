@@ -13,7 +13,7 @@ const EventsSection = () => {
     {
       title: "Masterclass: Cierra el año con propósito",
       date: "12 de Diciembre, 2025",
-      time: "18:00 GMT-5",
+      time: "7:00 PM",
       modality: "Online",
       description: "Haz tu mapa de sueños y aprende la mentalidad de éxito que me llevó a generar $400.000 en 18 meses.",
       link: "https://shop.beacons.ai/katherinee_ugc/244772ef-534e-4566-9d84-2eff12b8ef6b",
@@ -137,10 +137,10 @@ const EventsSection = () => {
               name="newsletter"
               method="POST"
               data-netlify="true"
+              action="/"
               onSubmit={handleSubscribe}
               className="flex flex-col sm:flex-row gap-4"
             >
-              {/* Hidden field required by Netlify Forms */}
               <input type="hidden" name="form-name" value="newsletter" />
 
               <Input
@@ -152,6 +152,7 @@ const EventsSection = () => {
                 required
                 className="flex-grow"
               />
+
               <Button type="submit" className="sm:w-auto">
                 Avísame
               </Button>

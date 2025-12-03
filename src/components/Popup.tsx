@@ -92,7 +92,7 @@ const Popup = () => {
           <p className="text-lg md:text-xl text-white font-medium mb-6 leading-relaxed">
             Cierra el año con propósito:<br />                                      {/* Linea 1 */}
             Mentalidad + mapa de sueños + plan de metas.<br />                      {/* Linea 2 */}
-            Ahora 19 USD{" "}                                                       {/* precio actual */}
+            Ahora 9 USD{" "}                                                       {/* precio actual */}
             <span className="line-through opacity-70">(precio real 49 USD)</span>.  {/* precio real */}
           </p>
 
