@@ -4,7 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/el-puente-digital/', 
+  base: '/eldigitalbridge/', 
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
