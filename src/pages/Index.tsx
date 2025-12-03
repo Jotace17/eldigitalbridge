@@ -17,7 +17,7 @@ import EnrollmentSection from "@/components/EnrollmentSection";
 import ProgramsSection from "@/components/ProgramsSection";
 import FinalCta from "@/components/FinalCta";
 import Footer from "@/components/Footer";
-import BlackFridayPopup from "@/components/BlackFridayPopup";
+import Popup from "@/components/Popup";
 
 const Index = () => {
   const [showPrograms, setShowPrograms] = useState(false);
@@ -69,7 +69,7 @@ const Index = () => {
       </AnimatePresence>
 
       <Footer />
-      <BlackFridayPopup />
+      <Popup />
     </div>
   );
 };

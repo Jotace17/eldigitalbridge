@@ -3,28 +3,45 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, MapPin } from "lucide-react";
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { toast } from "sonner";
 
 const EventsSection = () => {
   const [email, setEmail] = useState("");
 
-  const events = [
+  const events = [ //  informacion de eventos, para crear nuevos, agregar otros {},  antes de "]" con la info (no olvidar la coma ",")
     {
-      title: "Masterclass: Primeros pasos en marketing digital",
-      date: "15 de Diciembre, 2025",
-      time: "18:00 - 19:30 GMT-5",
+      title: "Masterclass: Cierra el año con propósito",
+      date: "12 de Diciembre, 2025",
+      time: "18:00 GMT-5",
       modality: "Online",
-      description: "Aprende los fundamentos para iniciar tu negocio digital de forma efectiva.",
+      description: "Haz tu mapa de sueños y aprende la mentalidad de éxito que me llevó a generar $400.000 en 18 meses.",
       link: "https://shop.beacons.ai/katherinee_ugc/244772ef-534e-4566-9d84-2eff12b8ef6b",
     },
   ];
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (email) {
+
+    if (!email) return;
+
+    try {
+      const form = e.currentTarget;
+      const formData = new FormData(form);
+
+      formData.set("email", email);
+      formData.set("form-name", "newsletter");
+
+      await fetch("/", {
+        method: "POST",
+        body: formData,
+      });
+
       toast.success("¡Gracias por suscribirte! Te mantendremos informado.");
       setEmail("");
+    } catch (error) {
+      console.error(error);
+      toast.error("Ha ocurrido un error. Por favor, inténtalo de nuevo.");
     }
   };
 
@@ -92,7 +109,7 @@ const EventsSection = () => {
                       {event.modality}
                     </div>
 
-                    <Button 
+                    <Button
                       className="w-full mt-4"
                       onClick={() => (window.location.href = event.link)}
                     >
@@ -103,7 +120,6 @@ const EventsSection = () => {
               </div>
             ))}
           </div>
-
         )}
 
         {/* Newsletter Section */}
@@ -117,9 +133,19 @@ const EventsSection = () => {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4">
+            <form
+              name="newsletter"
+              method="POST"
+              data-netlify="true"
+              onSubmit={handleSubscribe}
+              className="flex flex-col sm:flex-row gap-4"
+            >
+              {/* Hidden field required by Netlify Forms */}
+              <input type="hidden" name="form-name" value="newsletter" />
+
               <Input
                 type="email"
+                name="email"
                 placeholder="Escribe tu correo electrónico..."
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -133,6 +159,7 @@ const EventsSection = () => {
           </CardContent>
         </Card>
       </div>
+
       {/* Bottom section divider */}
       <div className="absolute bottom-0 left-0 w-full h-px bg-navy/5"></div>
     </section>

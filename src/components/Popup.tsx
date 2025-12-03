@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import blackFridayBg from "@/assets/black-friday-bg.jpg";
+import popupBg from "@/assets/flyer.jpg"; {/* flyer.jpg es el nombre de la imagen */}
 
-const BlackFridayPopup = () => {
+const Popup = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [hasBeenClosed, setHasBeenClosed] = useState(false);
 
   useEffect(() => {
-    const wasClosed = sessionStorage.getItem("blackFridayPopupClosed");
+    const wasClosed = sessionStorage.getItem("PopupClosed");
     if (wasClosed) {
       setHasBeenClosed(true);
       return;
@@ -49,7 +49,7 @@ const BlackFridayPopup = () => {
   const handleClose = () => {
     setIsVisible(false);
     setHasBeenClosed(true);
-    sessionStorage.setItem("blackFridayPopupClosed", "true");
+    sessionStorage.setItem("PopupClosed", "true");
   };
 
   if (!isVisible || hasBeenClosed) return null;
@@ -67,8 +67,8 @@ const BlackFridayPopup = () => {
       >
         {/* Background */}
         <img
-          src={blackFridayBg}
-          alt="Black Friday Sale"
+          src={popupBg}
+          alt="Sale"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
@@ -86,14 +86,14 @@ const BlackFridayPopup = () => {
         {/* CONTENT FIXED AT THE BOTTOM */}
         <div className="relative z-20 mt-auto p-6 sm:p-10">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-3 leading-tight">
-            Black Friday Mega Sale
+            Descuento en masterclass                                                {/* titulo */}
           </h2>
 
           <p className="text-lg md:text-xl text-white font-medium mb-6 leading-relaxed">
-            Obtén un 20% de descuento<br />
-            Accede a El Digital Bridge.<br />
-            Ahora 399 USD{" "}
-            <span className="line-through opacity-70">(antes 499 USD)</span>.
+            Cierra el año con propósito:<br />                                      {/* Linea 1 */}
+            Mentalidad + mapa de sueños + plan de metas.<br />                      {/* Linea 2 */}
+            Ahora 19 USD{" "}                                                       {/* precio actual */}
+            <span className="line-through opacity-70">(precio real 49 USD)</span>.  {/* precio real */}
           </p>
 
           <Button
@@ -101,7 +101,7 @@ const BlackFridayPopup = () => {
             className="w-full md:w-auto min-w-[300px] bg-[#a6ff01] hover:bg-[#95e600] text-black font-bold text-lg py-6 px-12 rounded-xl transition-all shine-effect"
             onClick={() =>
               (window.location.href =
-                "https://shop.beacons.ai/katherinee_ugc/8b96a046-edae-4c3d-a36e-db66d661570e")
+                "https://shop.beacons.ai/katherinee_ugc/244772ef-534e-4566-9d84-2eff12b8ef6b") // <- cambiar link del popup
             }
           >
             ¡Lo quiero ya!
@@ -116,4 +116,4 @@ const BlackFridayPopup = () => {
   );
 };
 
-export default BlackFridayPopup;
+export default Popup;
