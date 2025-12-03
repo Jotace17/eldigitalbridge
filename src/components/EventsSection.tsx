@@ -16,20 +16,7 @@ const EventsSection = () => {
       time: "18:00 - 19:30 GMT-5",
       modality: "Online",
       description: "Aprende los fundamentos para iniciar tu negocio digital de forma efectiva.",
-    },
-    {
-      title: "Workshop: Estrategias de contenido para redes",
-      date: "22 de Diciembre, 2025",
-      time: "17:00 - 20:00 GMT-5",
-      modality: "Online",
-      description: "Sesión práctica para crear un calendario de contenido que convierta.",
-    },
-    {
-      title: "Workshop: Cómo tener mentalidad de tiburón",
-      date: "4 de Enero, 2026",
-      time: "17:00 - 20:00 GMT-5",
-      modality: "Online",
-      description: "Sesión práctica para el año con el pie derecho.",
+      link: "https://shop.beacons.ai/katherinee_ugc/244772ef-534e-4566-9d84-2eff12b8ef6b",
     },
   ];
 
@@ -105,7 +92,12 @@ const EventsSection = () => {
                       {event.modality}
                     </div>
 
-                    <Button className="w-full mt-4">Registrarme</Button>
+                    <Button 
+                      className="w-full mt-4"
+                      onClick={() => (window.location.href = event.link)}
+                    >
+                      Registrarme
+                    </Button>
                   </CardContent>
                 </Card>
               </div>
