@@ -69,7 +69,7 @@ const Index = () => {
       </AnimatePresence>
 
       <Footer />
-      <Popup />
+      {/*<Popup />*/}
     </div>
   );
 };

@@ -10,14 +10,14 @@ const EventsSection = () => {
   const [email, setEmail] = useState("");
 
   const events = [ //  informacion de eventos, para crear nuevos, agregar otros {},  antes de "]" con la info (no olvidar la coma ",")
-    {
-      title: "Masterclass: Cierra el año con propósito",
-      date: "12 de Diciembre, 2025",
-      time: "7:00 PM",
-      modality: "Online",
-      description: "Haz tu mapa de sueños y aprende la mentalidad de éxito que me llevó a generar $400.000 en 18 meses.",
-      link: "https://shop.beacons.ai/katherinee_ugc/244772ef-534e-4566-9d84-2eff12b8ef6b",
-    },
+    //{
+    //  title: "Masterclass: Cierra el año con propósito",
+    //  date: "12 de Diciembre, 2025",
+    //  time: "7:00 PM",
+    //  modality: "Online",
+    //  description: "Haz tu mapa de sueños y aprende la mentalidad de éxito que me llevó a generar $400.000 en 18 meses.",
+    //  link: "https://shop.beacons.ai/katherinee_ugc/244772ef-534e-4566-9d84-2eff12b8ef6b",
+    //},
   ];
 
   const handleSubscribe = async (e: FormEvent<HTMLFormElement>) => {
