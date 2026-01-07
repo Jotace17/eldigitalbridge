@@ -77,7 +77,7 @@ const EnrollmentSection = () => {
         </div>
 
         <p className="text-center text-sm text-white/80">
-          ¿Tienes dudas? Contáctanos y te ayudamos a empezar.
+          ¿Tienes dudas? Contáctanos y te ayudamos a empezar!
         </p>
       </div>
       <div className="absolute bottom-0 left-0 w-full h-px bg-navy/5"></div>
