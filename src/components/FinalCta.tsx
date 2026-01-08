@@ -26,7 +26,7 @@ const FinalCta = ({ showPrograms, setShowPrograms }: FinalCtaProps) => {
           ¿Lista para cruzar el puente digital?
         </h2>
         <p className="text-lg md:text-xl mb-8 text-navy-foreground/90 max-w-2xl mx-auto">
-          Cuéntanos en qué etapa estás y te recomendamos el programa ideal para ti
+          Cuéntanos en qué etapa estás y te recomendamos el programa ideal para ti.
         </p>
 
         <div
