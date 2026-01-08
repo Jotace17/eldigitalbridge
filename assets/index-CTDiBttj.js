@@ -280,7 +280,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${t.do
                       from-[hsl(210_20%_85%/_0.4)] \r
                       via-transparent \r
                       to-[hsl(210_90%_70%/_0.4)]\r
-                      animate-pulse`,style:{animationDuration:"8s"}}),f.jsx("div",{className:"hero-pattern"})]}),f.jsxs("div",{className:"max-w-4xl mx-auto px-4 text-center",children:[f.jsx("h2",{className:"text-3xl md:text-4xl font-bold mb-6 text-navy-foreground",children:"¿Lista para cruzar el puente digital?"}),f.jsx("p",{className:"text-lg md:text-xl mb-8 text-navy-foreground/90 max-w-2xl mx-auto",children:"Cuéntanos en qué etapa estás y te recomendamos el programa ideal para ti"}),f.jsxs("div",{className:`\r
+                      animate-pulse`,style:{animationDuration:"8s"}}),f.jsx("div",{className:"hero-pattern"})]}),f.jsxs("div",{className:"max-w-4xl mx-auto px-4 text-center",children:[f.jsx("h2",{className:"text-3xl md:text-4xl font-bold mb-6 text-navy-foreground",children:"¿Lista para cruzar el puente digital?"}),f.jsx("p",{className:"text-lg md:text-xl mb-8 text-navy-foreground/90 max-w-2xl mx-auto",children:"Cuéntanos en qué etapa estás y te recomendamos el programa ideal para ti."}),f.jsxs("div",{className:`\r
             flex \r
             flex-col md:flex-row \r
             items-center justify-center\r
