@@ -33,7 +33,7 @@ const FaqSection = () => {
         "El 97% de usuarios en redes sociales NO generan dinero con las redes ¿crees que el 3% es mucha gente? \n No todo el mundo lo está haciendo, estamos en el inicio de esta era digital y si lo dejas pasar te vas a arrepentir de no haber iniciado antes!",
     },
     {
-      question: "¿Puedo hacerlo sin mostrar la cara?",
+      question: "¿Puedo hacerlo sin mostrar mi cara?",
       answer:
         "Sí, con inteligencia artificial y contenido educativo, puedes atraer a tu cliente ideal sin mostrar tu rostro en redes sociales.",
     },
