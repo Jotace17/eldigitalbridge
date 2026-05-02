@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
-import foto_katherine from "@/assets/founder-katherine-premium.jpg";
+import foto_katherine from "@/assets/testimonios/fundadoradeedb.jpg";
 import foto_troy from "@/assets/founder-troy-premium.jpg";
 import { useState } from "react";
 import { cn } from "@/lib/utils";

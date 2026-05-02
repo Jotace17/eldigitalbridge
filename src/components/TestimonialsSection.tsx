@@ -2,33 +2,33 @@
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Star } from "lucide-react";
 
-import testimonio_hellen from "@/assets/testimonios/testimonio-hellen-digital.jpeg";
-import testimonio_marketea from "@/assets/testimonios/testimonio-marketeamama.jpeg";
-import testimonio_maria from "@/assets/testimonios/testimonio-maria-hernandez.jpeg";
+import testimonio_yeslin from "@/assets/testimonios/testimonio_yeslin.jpg";
+import testimonio_maritza from "@/assets/testimonios/testimonio_maritza.jpg";
+import testimonio_salome from "@/assets/testimonios/testimonio_salome.jpeg";
 
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "María Hernandez",
-      role: "Consultora de Marca Personal",
+      name: "Salomé",
+      role: "Servicios Digitales",
       rating: 5,
-      image: testimonio_maria,
-      alt: "Testimonio de Maria hernandez sobre el programa",
+      image: testimonio_salome,
+      alt: "Testimonio de Salomé sobre el programa",
     },
     {
-      name: "Marketeamama",
+      name: "Maritza",
       role: "Coach Digital",
       rating: 5,
-      image: testimonio_marketea,
-      alt: "Testimonio de Marketeamama sobre estrategias efectivas",
+      image: testimonio_maritza,
+      alt: "Testimonio de Maritza sobre estrategias efectivas",
     },
     {
-      name: "Hellen Digital",
+      name: "Yeslin",
       role: "Creadora de Contenido",
       rating: 5,
-      image: testimonio_hellen,
-      alt: "Testimonio de Hellen sobre acompañamiento",
+      image: testimonio_yeslin,
+      alt: "Testimonio de Yeslin sobre acompañamiento",
     },
   ];
 

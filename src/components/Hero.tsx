@@ -54,7 +54,7 @@ const Hero = () => {
             <Card className="overflow-hidden shadow-xl rounded-2xl mb-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
               <div className="relative aspect-video">
                 <iframe
-                  src="https://player.vimeo.com/video/1115884764?h=b223b1bd7c&title=0&byline=0&portrait=0&badge=0"
+                  src="https://vimeo.com/1187161776/80c8568f2f?h=b223b1bd7c&title=0&byline=0&portrait=0&badge=0"
                   className="absolute inset-0 w-full h-full"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
