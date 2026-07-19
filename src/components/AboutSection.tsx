@@ -53,7 +53,7 @@ const AboutSection = () => {
             <p className="text-lg text-muted-foreground mb-6 text-justify">
               El Digital Bridge nace de la necesidad de ofrecer formación práctica,
               ética y actualizada para profesionales que quieren monetizar su
-              conocimiento en el entorno digital.
+              conocimiento en el entorno digital. 
             </p>
             <p className="text-lg text-muted-foreground mb-8 text-justify">
               Trabajamos con metodologías probadas, enfocadas en resultados reales
