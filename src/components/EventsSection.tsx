@@ -51,7 +51,7 @@ const EventsSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Próximos eventos</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Participa en nuestros talleres en vivo, masterclasses y sesiones de comunidad
+            Participa en nuestros talleres en vivo, masterclasses y sesiones de comunidad.
           </p>
         </div>
 
